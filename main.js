@@ -1,5 +1,6 @@
-import { StartMenu } from './scenes/StartMenu.js';
+ import { StartMenu } from './scenes/StartMenu.js';
 import { MainLevel } from './scenes/MainLevel.js';
+import { MainLevel2 } from './scenes/MainLevel2.js';
 import { GameOver } from './scenes/GameOver.js';
 
 let config = {
@@ -13,13 +14,13 @@ let config = {
     physics: {
         default: "arcade",
         arcade: {
-            debug: false,
-            fps: 60,
-            gravity: { y: 0 }
+            debug: true,
+            fps: 240,
+            gravity: { y: 1000, x:0 }
         }
     },
     scene: [ 
-      StartMenu, GameOver, MainLevel
+      StartMenu, GameOver, MainLevel, MainLevel2
     ]
 };
 
